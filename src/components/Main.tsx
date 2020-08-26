@@ -1,9 +1,7 @@
-import React from 'react';
-import { Stack } from '@chakra-ui/core';
+import React, { FC } from 'react';
+import { Stack, StackProps } from '@chakra-ui/core';
 
-interface Props {}
-
-export const Main = (props) => {
+export const Main: FC<StackProps> = (props) => {
   // console.log({ ...props });
   return (
     <Stack

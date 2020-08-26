@@ -1,7 +1,7 @@
-import { Flex, useColorMode, BoxProps } from '@chakra-ui/core';
-import React from 'react';
+import { Flex, useColorMode, BoxProps, FlexProps } from '@chakra-ui/core';
+import React, { FC } from 'react';
 
-export const Container = (props) => {
+export const Container: FC<FlexProps> = (props) => {
   const { colorMode } = useColorMode();
   const bgColor = { light: 'gray.50', dark: 'gray.900' };
   const color = { light: 'black', dark: 'white' };

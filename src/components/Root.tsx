@@ -1,10 +1,8 @@
-import { Flex, useColorMode } from '@chakra-ui/core';
-import { FC } from 'react';
+import { Flex, useColorMode, FlexProps } from '@chakra-ui/core';
+import { FC, ReactElement } from 'react';
 
-type Props = string;
-
-const Root: FC<any> = (props) => {
-  // console.log(props);
+const Root: FC<FlexProps> = (props) => {
+  console.log(props);
   const { colorMode } = useColorMode();
   const bgColor = { light: 'gray.50', dark: 'gray.900' };
   const color = { light: 'black', dark: 'white' };

@@ -3,9 +3,7 @@ import { Link as ChakraLink, Button } from '@chakra-ui/core';
 import { Container } from './Container';
 import { FC } from 'react';
 
-interface Props {}
-
-export const CTA: FC<Props> = () => (
+export const CTA: FC<{}> = () => (
   <Container
     flexDirection="row"
     position="fixed"

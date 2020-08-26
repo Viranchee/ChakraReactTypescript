@@ -15,11 +15,10 @@ import { Main } from 'components/Main';
 import { DarkModeSwitch } from 'components/DarkModeSwitch';
 import { CTA } from 'components/CTA';
 import { Footer } from 'components/Footer';
-import React from 'react';
+import React, { FC } from 'react';
 import Root from 'components/Root';
 
-const Override = (props) => {
-  console.log(props);
+const Override: FC<{}> = () => {
   return (
     <Root>
       <Text>Hello</Text>
