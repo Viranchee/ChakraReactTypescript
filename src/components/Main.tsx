@@ -1,4 +1,7 @@
-import { Stack } from '@chakra-ui/core'
+import React from 'react';
+import { Stack } from '@chakra-ui/core';
+
+interface Props {}
 
 export const Main = (props) => (
   <Stack
@@ -10,4 +13,4 @@ export const Main = (props) => (
     px="1rem"
     {...props}
   />
-)
+);

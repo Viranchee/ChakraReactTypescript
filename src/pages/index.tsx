@@ -6,18 +6,18 @@ import {
   List,
   ListIcon,
   ListItem,
-} from '@chakra-ui/core'
+} from '@chakra-ui/core';
 
-import { Hero } from '../components/Hero'
-import { Container } from '../components/Container'
-import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
-import { Footer } from '../components/Footer'
+import { Hero } from '../components/Hero';
+import { Container } from '../components/Container';
+import { Main } from '../components/Main';
+import { DarkModeSwitch } from '../components/DarkModeSwitch';
+import { CTA } from '../components/CTA';
+import { Footer } from '../components/Footer';
 
 const Index = () => (
   <Container>
-    <Hero />
+    <Hero title="Hello" />
     <Main>
       <Text>
         Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code>.
@@ -30,8 +30,7 @@ const Index = () => (
             isExternal
             href="https://chakra-ui.com"
             flexGrow={1}
-            mr={2}
-          >
+            mr={2}>
             Chakra UI <Icon name="external-link" mx="2px" />
           </ChakraLink>
         </ListItem>
@@ -50,6 +49,6 @@ const Index = () => (
     </Footer>
     <CTA />
   </Container>
-)
+);
 
-export default Index
+export default Index;
