@@ -1,5 +1,5 @@
 import { Flex, useColorMode, FlexProps } from '@chakra-ui/core';
-import { FC, ReactElement } from 'react';
+import { FC } from 'react';
 
 const Root: FC<FlexProps> = (props) => {
   const { colorMode } = useColorMode();

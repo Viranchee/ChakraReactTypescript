@@ -1,4 +1,4 @@
-import { Flex, useColorMode, BoxProps, FlexProps } from '@chakra-ui/core';
+import { Flex, useColorMode, FlexProps } from '@chakra-ui/core';
 import React, { FC } from 'react';
 
 export const Container: FC<FlexProps> = (props) => {
