@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import { Stack, StackProps } from '@chakra-ui/core';
 
 export const Main: FC<StackProps> = (props) => {
-  // console.log({ ...props });
   return (
     <Stack
       spacing="1.5rem"
