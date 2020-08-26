@@ -1,12 +1,13 @@
-import { Flex, useColorMode, BoxProps } from '@chakra-ui/core';
-import React from 'react';
+import { Flex, useColorMode } from '@chakra-ui/core';
+import { FC } from 'react';
 
-export const Container = (props) => {
+type Props = string;
+
+const Root: FC<any> = (props) => {
+  // console.log(props);
   const { colorMode } = useColorMode();
   const bgColor = { light: 'gray.50', dark: 'gray.900' };
   const color = { light: 'black', dark: 'white' };
-  console.log(props);
-  console.log('Hello');
 
   return (
     <Flex
@@ -19,3 +20,5 @@ export const Container = (props) => {
     />
   );
 };
+
+export default Root;
