@@ -24,6 +24,31 @@
     "es2020": true
   },
   "rules": {
+    "curly": ["error", "multi-or-nest", "consistent"],
+    "arrow-body-style": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
+    "default-case": "error",
+    "dot-notation": ["error", { "allowKeywords": false }],
+    "eqeqeq": "error",
+    "func-style": ["error", "expression"],
+    "func-call-spacing": ["error", "never"],
+    "function-call-argument-newline": ["error", "consistent"],
+    "handle-callback-err": "error",
+    "indent": ["error", 2],
+    "jsx-quotes": "error",
+    "no-await-in-loop": 1,
+    "no-bitwise": "error",
+    "require-atomic-updates": "error",
+    "prefer-const": 1,
+    "rest-spread-spacing": ["error", "never"],
+    "sort-imports": [
+      "error",
+      {
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "allowSeparatedGroups": true
+      }
+    ],
+    //
     "react/react-in-jsx-scope": 0,
     "react/display-name": 0,
     "react/prop-types": 0,
@@ -34,17 +59,7 @@
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-var-requires": 0,
     "@typescript-eslint/no-use-before-define": 0,
-    "@typescript-eslint/no-unused-vars": [
-      2,
-      {
-        "argsIgnorePattern": "^_"
-      }
-    ],
-    "no-console": [
-      2,
-      {
-        "allow": ["warn", "error"]
-      }
-    ]
+    "@typescript-eslint/no-unused-vars": [2, { "argsIgnorePattern": "^_" }],
+    "no-console": [2, { "allow": ["warn", "error"] }]
   }
 }

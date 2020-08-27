@@ -1,7 +1,7 @@
-import { ThemeProvider, CSSReset, ColorModeProvider } from '@chakra-ui/core';
+import { CSSReset, ColorModeProvider, ThemeProvider } from '@chakra-ui/core';
 import type { AppProps /*, AppContext */ } from 'next/app';
-import theme from '../theme';
 import { FC } from 'react';
+import theme from '../theme';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (

@@ -1,4 +1,4 @@
-import { Flex, useColorMode, FlexProps } from '@chakra-ui/core';
+import { Flex, FlexProps, useColorMode } from '@chakra-ui/core';
 import { FC } from 'react';
 
 const Root: FC<FlexProps> = (props) => {
