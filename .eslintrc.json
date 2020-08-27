@@ -24,25 +24,25 @@
     "es2020": true
   },
   "rules": {
-    "curly": ["error", "multi-or-nest", "consistent"],
-    "arrow-body-style": ["error", "always"],
-    "comma-dangle": ["error", "always-multiline"],
-    "default-case": "error",
-    "dot-notation": ["error", { "allowKeywords": false }],
-    "eqeqeq": "error",
-    "func-style": ["error", "expression"],
-    "func-call-spacing": ["error", "never"],
-    "function-call-argument-newline": ["error", "consistent"],
-    "handle-callback-err": "error",
-    "indent": ["error", 2],
-    "jsx-quotes": "error",
+    "curly": [2, "multi-or-nest", "consistent"],
+    "arrow-body-style": [2, "always"],
+    "comma-dangle": [2, "always-multiline"],
+    "default-case": 2,
+    "dot-notation": [2, { "allowKeywords": false }],
+    "eqeqeq": 2,
+    "func-style": [2, "expression"],
+    "func-call-spacing": [2, "never"],
+    "function-call-argument-newline": [2, "consistent"],
+    "handle-callback-err": 2,
+    "indent": [2, 2],
+    "jsx-quotes": 2,
     "no-await-in-loop": 1,
-    "no-bitwise": "error",
-    "require-atomic-updates": "error",
+    "no-bitwise": 2,
+    "require-atomic-updates": 2,
     "prefer-const": 1,
-    "rest-spread-spacing": ["error", "never"],
+    "rest-spread-spacing": [2, "never"],
     "sort-imports": [
-      "error",
+      2,
       {
         "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
         "allowSeparatedGroups": true
@@ -59,7 +59,7 @@
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-var-requires": 0,
     "@typescript-eslint/no-use-before-define": 0,
-    "@typescript-eslint/no-unused-vars": [2, { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-unused-vars": [1, { "argsIgnorePattern": "^_" }],
     "no-console": [2, { "allow": ["warn", "error"] }]
   }
 }
