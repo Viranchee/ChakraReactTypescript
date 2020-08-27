@@ -7,7 +7,7 @@
       "jsx": true
     }
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "react"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -24,6 +24,7 @@
     "es2020": true
   },
   "rules": {
+    // eslint
     "curly": [2, "multi-or-nest", "consistent"],
     "arrow-body-style": [2, "always"],
     "comma-dangle": [2, "always-multiline"],
@@ -48,18 +49,20 @@
         "allowSeparatedGroups": true
       }
     ],
-    //
+    "no-console": [2, { "allow": ["warn", "error"] }],
+    // React & TS
     "react/react-in-jsx-scope": 0,
-    "react/display-name": 0,
+    "react/require-default-props": 1,
+    "react/display-name": 1,
     "react/prop-types": 0,
-    "@typescript-eslint/explicit-function-return-type": 0,
-    "@typescript-eslint/explicit-member-accessibility": 0,
+    "react/boolean-prop-naming": 1,
+    "@typescript-eslint/explicit-function-return-type": 1,
+    "@typescript-eslint/explicit-member-accessibility": 1,
     "@typescript-eslint/indent": 0,
-    "@typescript-eslint/member-delimiter-style": 0,
-    "@typescript-eslint/no-explicit-any": 0,
-    "@typescript-eslint/no-var-requires": 0,
-    "@typescript-eslint/no-use-before-define": 0,
-    "@typescript-eslint/no-unused-vars": [1, { "argsIgnorePattern": "^_" }],
-    "no-console": [2, { "allow": ["warn", "error"] }]
+    "@typescript-eslint/member-delimiter-style": 1,
+    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/no-var-requires": 1,
+    "@typescript-eslint/no-use-before-define": 1,
+    "@typescript-eslint/no-unused-vars": [1, { "argsIgnorePattern": "^_" }]
   }
 }
