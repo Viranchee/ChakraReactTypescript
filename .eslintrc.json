@@ -12,11 +12,13 @@
       "version": "detect"
     }
   },
-  "plugins": ["@typescript-eslint", "react"],
+  "plugins": ["@typescript-eslint", "react", "jsx-a11y", "react-hooks"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/strict"
     // Uncomment the following lines to enable eslint-config-prettier
     // Is not enabled right now to avoid issues with the Next.js repo
     // "prettier",

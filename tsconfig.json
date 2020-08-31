@@ -4,6 +4,7 @@
     "target": "ES2018",
     "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": "./src",
+    "rootDir": "src",
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,

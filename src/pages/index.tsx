@@ -1,5 +1,4 @@
 import { Link as ChakraLink, Icon, List, ListIcon, ListItem, Text } from '@chakra-ui/core';
-import React, { FC } from 'react';
 // My Files
 import { Container } from 'components/Container';
 import { DarkModeSwitch } from 'components/DarkModeSwitch';
@@ -16,7 +15,7 @@ const data = {
   twitter: 'https://www.twitter.com/code_magician',
 };
 
-const Index: FC<unknown> = () => {
+const Index: React.FC = () => {
   return (
     <Container>
       <Hero title={data.name} />
@@ -41,7 +40,12 @@ const Index: FC<unknown> = () => {
       </Main>
 
       <Footer>
-        <Text>Proudly made in 🇮🇳</Text>
+        <Text>
+          Proudly made in
+          <span role="img" aria-label="India" aria-labelledby="India">
+            🇮🇳
+          </span>
+        </Text>
       </Footer>
     </Container>
   );

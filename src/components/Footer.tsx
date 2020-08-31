@@ -1,6 +1,5 @@
-import { Flex, FlexProps } from '@chakra-ui/core';
-import { FC } from 'react';
+import { Flex } from '@chakra-ui/core';
 
-export const Footer: FC<FlexProps> = (props) => {
+export const Footer: React.FC = (props) => {
   return <Flex as="footer" py="1vh" {...props} />;
 };
