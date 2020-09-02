@@ -1,4 +1,4 @@
-import { Container } from 'next/app';
+import { Container } from 'components/Container';
 import { DarkModeSwitch } from 'components/DarkModeSwitch';
 
 const Trello: React.FC = () => {
