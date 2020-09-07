@@ -1,36 +1,27 @@
-import { Box, Heading, Stack, Text } from '@chakra-ui/core';
+import { VStack, Image, Heading } from '@chakra-ui/core';
 
-import { DarkModeSwitch } from 'components/DarkModeSwitch';
+import { LinkUI, LinkUIProps } from 'components/LinkUI';
+// import { DarkModeSwitch } from 'components/DarkModeSwitch';
 
-interface LinkUIProps {
-  title: string;
-  subtitle: string;
-}
 const data: LinkUIProps[] = [
-  { title: 'Twitter', subtitle: 'https://www.twitter.com/code_magician' },
-  { title: 'LinkedIn', subtitle: 'https://www.twitter.com/code_magician' },
-  { title: 'Portfolio', subtitle: 'https://www.twitter.com/code_magician' },
+  { title: 'Twitter', url: 'https://www.twitter.com/code_magician' },
+  { title: 'LinkedIn', url: 'https://www.linkedin.com/in/viranchee/' },
+  { title: 'Portfolio', url: 'https://www.viranchee.com' },
+  { title: 'Email', url: 'mailto:viranchee@outlook.com' },
+  { title: 'Phone', url: 'tel:+919029823078' },
 ];
 
-const LinkUI: React.FC<LinkUIProps> = (props) => {
-  return (
-    <Box>
-      <Heading>{props.title}</Heading>
-      <Text>{props.subtitle}</Text>
-    </Box>
-  );
-};
+const local = '/profile.jpg';
 
 const Links: React.FC = () => {
   return (
-    <>
-      <DarkModeSwitch />
-      <Stack spacing={80}>
-        {data.map((value) => {
-          return LinkUI(value);
-        })}
-      </Stack>
-    </>
+    <VStack spacing="10px" marginTop={5}>
+      <Image borderRadius="full" boxSize="150px" src={local} alt="Vir" />
+      <Heading marginBottom={10}>Viranchee Lotia</Heading>
+      {data.map((value) => {
+        return <LinkUI title={value.title} url={value.url} key={value.title} />;
+      })}
+    </VStack>
   );
 };
 

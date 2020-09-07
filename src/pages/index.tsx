@@ -25,13 +25,13 @@ const Index: React.FC = () => {
 
         <List spacing={3} my={0}>
           <ListItem>
-            <ListIcon icon="check-circle" color="green.500" />
+            <ListIcon color="green.500" />
             <ChakraLink isExternal href={data.github} flexGrow={1} mr={2}>
               {data.githubDesc} <Icon name="external-link" mx="2px" />
             </ChakraLink>
           </ListItem>
           <ListItem>
-            <ListIcon icon="check-circle" color="green.500" />
+            <ListIcon color="green.500" />
             <ChakraLink isExternal href={data.twitter} flexGrow={1} mr={2}>
               {data.twitterDesc} <Icon name="external-link" mx="2px" />
             </ChakraLink>
