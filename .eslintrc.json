@@ -50,9 +50,10 @@
     "prefer-const": 1,
     "rest-spread-spacing": [2, "never"],
     "sort-imports": [
-      2,
+      1,
       {
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        // "memberSyntaxSortOrder": ["none", "all", "single", "multiple"],
+        "ignoreMemberSort": true,
         "allowSeparatedGroups": true
       }
     ],
