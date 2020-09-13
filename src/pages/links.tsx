@@ -1,7 +1,8 @@
 import { VStack, Image, Heading } from '@chakra-ui/core';
 
 import { LinkUI, LinkUIProps } from 'components/LinkUI';
-// import { DarkModeSwitch } from 'components/DarkModeSwitch';
+import { Container } from 'components/Container';
+import { DarkModeSwitch } from 'components/DarkModeSwitch';
 
 const data: LinkUIProps[] = [
   { title: 'Twitter', url: 'https://www.twitter.com/code_magician' },
@@ -15,13 +16,16 @@ const local = '/profile.jpg';
 
 const Links: React.FC = () => {
   return (
-    <VStack spacing="10px" paddingTop={5}>
-      <Image borderRadius="full" boxSize="150px" src={local} alt="Vir" />
-      <Heading marginBottom={10}>Viranchee Lotia</Heading>
-      {data.map((value) => {
-        return <LinkUI title={value.title} url={value.url} key={value.title} />;
-      })}
-    </VStack>
+    <Container>
+      <DarkModeSwitch />
+      <VStack spacing="10px" paddingTop={5}>
+        <Image borderRadius="full" boxSize="150px" src={local} alt="Vir" />
+        <Heading marginBottom={10}>Viranchee Lotia</Heading>
+        {data.map((value) => {
+          return <LinkUI title={value.title} url={value.url} key={value.title} />;
+        })}
+      </VStack>
+    </Container>
   );
 };
 

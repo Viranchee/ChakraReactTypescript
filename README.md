@@ -10,3 +10,4 @@ Can do better time management
 ## ToDo:
 
 - [ ] Header on the website
+- [x] Dark Background color

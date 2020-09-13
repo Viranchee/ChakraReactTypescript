@@ -9,6 +9,7 @@ export const Container: React.FC<FlexProps> = (props) => {
       direction="column"
       alignItems="center"
       justifyContent="flex-start"
+      minHeight="100vh"
       bg={bgColor[colorMode]}
       color={color[colorMode]}
       {...props}
