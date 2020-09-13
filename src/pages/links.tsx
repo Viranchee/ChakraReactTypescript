@@ -15,7 +15,7 @@ const local = '/profile.jpg';
 
 const Links: React.FC = () => {
   return (
-    <VStack spacing="10px" marginTop={5}>
+    <VStack spacing="10px" paddingTop={5}>
       <Image borderRadius="full" boxSize="150px" src={local} alt="Vir" />
       <Heading marginBottom={10}>Viranchee Lotia</Heading>
       {data.map((value) => {
