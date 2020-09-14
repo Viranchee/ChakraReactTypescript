@@ -1,5 +1,4 @@
 import { Link as ChakraLink, Icon, List, ListIcon, ListItem, Text } from '@chakra-ui/core';
-import React, { FC } from 'react';
 // My Files
 import { Container } from 'components/Container';
 import { DarkModeSwitch } from 'components/DarkModeSwitch';
@@ -16,23 +15,23 @@ const data = {
   twitter: 'https://www.twitter.com/code_magician',
 };
 
-const Index: FC<unknown> = () => {
+const Index: React.FC = () => {
   return (
     <Container>
-      <Hero title={data.name} />
       <DarkModeSwitch />
+      <Hero title={data.name} />
       <Main>
         <Text>{data.description}</Text>
 
         <List spacing={3} my={0}>
           <ListItem>
-            <ListIcon icon="check-circle" color="green.500" />
+            <ListIcon color="green.500" />
             <ChakraLink isExternal href={data.github} flexGrow={1} mr={2}>
               {data.githubDesc} <Icon name="external-link" mx="2px" />
             </ChakraLink>
           </ListItem>
           <ListItem>
-            <ListIcon icon="check-circle" color="green.500" />
+            <ListIcon color="green.500" />
             <ChakraLink isExternal href={data.twitter} flexGrow={1} mr={2}>
               {data.twitterDesc} <Icon name="external-link" mx="2px" />
             </ChakraLink>
@@ -40,9 +39,7 @@ const Index: FC<unknown> = () => {
         </List>
       </Main>
 
-      <Footer>
-        <Text>Proudly made in 🇮🇳</Text>
-      </Footer>
+      <Footer />
     </Container>
   );
 };

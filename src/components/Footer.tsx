@@ -1,6 +1,20 @@
-import { Flex, FlexProps } from '@chakra-ui/core';
-import { FC } from 'react';
+import { Flex, Text } from '@chakra-ui/core';
 
-export const Footer: FC<FlexProps> = (props) => {
-  return <Flex as="footer" py="1vh" {...props} />;
+const text = {
+  madeIn: 'Proudly made in ',
+  indiaEmoji: '🇮🇳',
+  indiaLabel: 'India',
+};
+
+export const Footer: React.FC = () => {
+  return (
+    <Flex as="footer" py="1vh">
+      <Text>
+        {text.madeIn}
+        <span role="img" aria-label={text.indiaLabel} aria-labelledby={text.indiaLabel}>
+          {text.indiaEmoji}
+        </span>
+      </Text>
+    </Flex>
+  );
 };
