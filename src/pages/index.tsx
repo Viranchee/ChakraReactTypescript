@@ -18,8 +18,8 @@ const data = {
 const Index: React.FC = () => {
   return (
     <Container>
-      <Hero title={data.name} />
       <DarkModeSwitch />
+      <Hero title={data.name} />
       <Main>
         <Text>{data.description}</Text>
 
@@ -39,14 +39,7 @@ const Index: React.FC = () => {
         </List>
       </Main>
 
-      <Footer>
-        <Text>
-          Proudly made in
-          <span role="img" aria-label="India" aria-labelledby="India">
-            🇮🇳
-          </span>
-        </Text>
-      </Footer>
+      <Footer />
     </Container>
   );
 };
